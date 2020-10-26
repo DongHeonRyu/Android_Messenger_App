@@ -18,7 +18,6 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseException;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
@@ -146,7 +145,7 @@ public class RegistrationActivity extends AppCompatActivity {
         FirebaseUser firebaseUser =FirebaseAuth.getInstance().getCurrentUser();
 
         if(firebaseUser !=null){
-            Intent homeIntent = new Intent(RegistrationActivity.this,MainActivity.class);
+            Intent homeIntent = new Intent(RegistrationActivity.this, ContactsActivity.class);
             startActivity(homeIntent);
             finish();
         }
@@ -163,7 +162,7 @@ public class RegistrationActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
 
                             loadingBar.dismiss();
-                            Toast.makeText(RegistrationActivity.this,"Congratuations, you are loagged in successfully",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(RegistrationActivity.this,"Congratulations, you are logged in successfully",Toast.LENGTH_SHORT).show();
                             sendUserToMainActivity();
                         } else {
                             String e = task.getException().toString();
@@ -174,7 +173,7 @@ public class RegistrationActivity extends AppCompatActivity {
     }
 
     private void sendUserToMainActivity(){
-        Intent intent = new Intent(RegistrationActivity.this, MainActivity.class);
+        Intent intent = new Intent(RegistrationActivity.this, ContactsActivity.class);
         startActivity(intent);
         finish();
     }
