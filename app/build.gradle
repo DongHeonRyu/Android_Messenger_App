@@ -40,6 +40,12 @@ dependencies {
     implementation 'com.firebaseui:firebase-ui-database:3.2.2'
     implementation 'com.hbb20:ccp:2.1.9'
     implementation 'pub.devrel:easypermissions:0.4.0'
+
+//  Add implementation at video 14 6:30
+    implementation 'com.opentok.android:opentok-android-sdk:2.15.3'
+    implementation 'pub.devrel:easypermissions:0.4.0'
+
+
     implementation 'com.squareup.picasso:picasso:2.71828'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
