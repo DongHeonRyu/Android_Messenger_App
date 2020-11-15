@@ -131,6 +131,7 @@ public class RegistrationActivity extends AppCompatActivity {
                 continueAndNextBtn.setText("Submit");
                 codeText.setVisibility(View.VISIBLE);
 
+                loadingBar.dismiss();
                 Toast.makeText(RegistrationActivity.this,"Code has been sent, please check",Toast.LENGTH_SHORT).show();
 
             }
@@ -166,6 +167,7 @@ public class RegistrationActivity extends AppCompatActivity {
                             sendUserToMainActivity();
                         } else {
                             String e = task.getException().toString();
+                            loadingBar.dismiss();
                             Toast.makeText(RegistrationActivity.this,"Error: " + e,Toast.LENGTH_SHORT).show();
                         }
                     }

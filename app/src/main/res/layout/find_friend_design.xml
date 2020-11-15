@@ -7,8 +7,7 @@
     android:elevation="20dp"
     android:layout_marginTop="15dp"
     android:layout_marginRight="25dp"
-    android:layout_marginLeft="25dp"
-    >
+    android:layout_marginLeft="25dp">
 
     <RelativeLayout
         android:id="@+id/card_view"
@@ -23,7 +22,6 @@
             android:layout_centerHorizontal="true"
             android:src="@drawable/profile_image"
             android:layout_marginTop="15dp">
-
         </ImageView>
 
         <TextView
@@ -37,7 +35,6 @@
             android:textStyle="bold"
             android:layout_marginTop="5dp"
             android:layout_below="@+id/image_notification">
-
         </TextView>
 
         <Button
@@ -53,8 +50,8 @@
             android:textColor="@android:color/white"
             android:text="Accept Friend Request"
             android:textAllCaps="false"
-            android:textSize="13sp">
-
+            android:textSize="13sp"
+            android:visibility="gone">
         </Button>
 
         <Button
@@ -71,8 +68,8 @@
             android:textColor="@android:color/white"
             android:text="Cancel Friend Request"
             android:textAllCaps="false"
-            android:textSize="13sp">
-
+            android:textSize="13sp"
+            android:visibility="gone">
         </Button>
     </RelativeLayout>
 
