@@ -34,9 +34,9 @@ public class VideoChatActivity extends AppCompatActivity
         PublisherKit.PublisherListener {
 
 
-    private static String API_Key = "";
-    private static String SESSION_ID = "";
-    private static String TOKEN = "";
+    private static String API_Key = "46992154";
+    private static String SESSION_ID = "1_MX40Njk5MjE1NH5-MTYwNTY1MjA2MjcyN35jQ0thWlNQYVhRaE9ZOGR5V3JCdzRROER-fg";
+    private static String TOKEN = "T1==cGFydG5lcl9pZD00Njk5MjE1NCZzaWc9NDEyNGMwYTcxMGMzOGZiNmQ1MDNkNWY2OTZiMzRmYjBkYjdkZDk1ZDpzZXNzaW9uX2lkPTFfTVg0ME5qazVNakUxTkg1LU1UWXdOVFkxTWpBMk1qY3lOMzVqUTB0aFdsTlFZVmhSYUU5Wk9HUjVWM0pDZHpSUk9FUi1mZyZjcmVhdGVfdGltZT0xNjA1NjUyMjA2Jm5vbmNlPTAuNjA0MTc5NDM4NjA1Nzk1NSZyb2xlPXB1Ymxpc2hlciZleHBpcmVfdGltZT0xNjA1NjczODA2JmluaXRpYWxfbGF5b3V0X2NsYXNzX2xpc3Q9";
     private static final String LOG_TAG = VideoChatActivity.class.getSimpleName();
     private static final int RC_VIDEO_APP_PERM = 124;
 
@@ -119,6 +119,12 @@ public class VideoChatActivity extends AppCompatActivity
                 });
             }
         });
+
+        try {
+            requestPermissions();
+        } catch (OpentokException e) {
+            e.printStackTrace();
+        }
 
     }
 
