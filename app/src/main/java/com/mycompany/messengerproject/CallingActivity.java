@@ -130,7 +130,6 @@ public class CallingActivity extends AppCompatActivity {
                     public void onDataChange(DataSnapshot dataSnapshot) {
 
                         if (!checker.equals("clicked") && !dataSnapshot.hasChild("Calling") && !dataSnapshot.hasChild("Ringing")) {
-                            mediaPlayer.start();
                             final HashMap<String, Object> callingInfo = new HashMap<>();
                             callingInfo.put("calling", receiverUserId);
 
