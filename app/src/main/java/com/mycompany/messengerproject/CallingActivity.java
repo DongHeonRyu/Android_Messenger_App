@@ -122,7 +122,7 @@ public class CallingActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 
-        mediaPlayer.stop();
+        mediaPlayer.start();
 
         usersRef.child(receiverUserId)
                 .addListenerForSingleValueEvent(new ValueEventListener() {
