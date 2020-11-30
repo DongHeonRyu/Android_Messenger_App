@@ -35,8 +35,9 @@ public class VideoChatActivity extends AppCompatActivity
 
 
     private static String API_Key = "46992154";
-    private static String SESSION_ID = "1_MX40Njk5MjE1NH5-MTYwNTY1MjA2MjcyN35jQ0thWlNQYVhRaE9ZOGR5V3JCdzRROER-fg";
-    private static String TOKEN = "T1==cGFydG5lcl9pZD00Njk5MjE1NCZzaWc9NDEyNGMwYTcxMGMzOGZiNmQ1MDNkNWY2OTZiMzRmYjBkYjdkZDk1ZDpzZXNzaW9uX2lkPTFfTVg0ME5qazVNakUxTkg1LU1UWXdOVFkxTWpBMk1qY3lOMzVqUTB0aFdsTlFZVmhSYUU5Wk9HUjVWM0pDZHpSUk9FUi1mZyZjcmVhdGVfdGltZT0xNjA1NjUyMjA2Jm5vbmNlPTAuNjA0MTc5NDM4NjA1Nzk1NSZyb2xlPXB1Ymxpc2hlciZleHBpcmVfdGltZT0xNjA1NjczODA2JmluaXRpYWxfbGF5b3V0X2NsYXNzX2xpc3Q9";
+    private static String SESSION_ID = "2_MX40Njk5MjE1NH5-MTYwNjQzNDIxMjA0M35BMkljdXZtT0d6K25uanJ2TnpSZHRnU2R-fg";
+    private static String TOKEN = "T1==cGFydG5lcl9pZD00Njk5MjE1NCZzaWc9NzZkMmZlYzgzMjAyMGI2MTU4ZTkyZmVlOWMwNTgzNTQ3OGI2NzFiZTpzZXNzaW9uX2lkPTJfTVg0ME5qazVNakUxTkg1LU1UWXdOalF6TkRJeE1qQTBNMzVCTWtsamRYWnRUMGQ2SzI1dWFuSjJUbnBTWkhSblUyUi1mZyZjcmVhdGVfdGltZT0xNjA2NDM0MjYxJm5vbmNlPTAuNjc4MzUwNzA2MzM3MzU3NyZyb2xlPXB1Ymxpc2hlciZleHBpcmVfdGltZT0xNjA5MDI2MjYwJmluaXRpYWxfbGF5b3V0X2NsYXNzX2xpc3Q9";
+
     private static final String LOG_TAG = VideoChatActivity.class.getSimpleName();
     private static final int RC_VIDEO_APP_PERM = 124;
 
