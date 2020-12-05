@@ -34,9 +34,9 @@ public class VideoChatActivity extends AppCompatActivity
         PublisherKit.PublisherListener {
 
 
-    private static String API_Key = "46992154";
-    private static String SESSION_ID = "2_MX40Njk5MjE1NH5-MTYwNjQzNDIxMjA0M35BMkljdXZtT0d6K25uanJ2TnpSZHRnU2R-fg";
-    private static String TOKEN = "T1==cGFydG5lcl9pZD00Njk5MjE1NCZzaWc9NzZkMmZlYzgzMjAyMGI2MTU4ZTkyZmVlOWMwNTgzNTQ3OGI2NzFiZTpzZXNzaW9uX2lkPTJfTVg0ME5qazVNakUxTkg1LU1UWXdOalF6TkRJeE1qQTBNMzVCTWtsamRYWnRUMGQ2SzI1dWFuSjJUbnBTWkhSblUyUi1mZyZjcmVhdGVfdGltZT0xNjA2NDM0MjYxJm5vbmNlPTAuNjc4MzUwNzA2MzM3MzU3NyZyb2xlPXB1Ymxpc2hlciZleHBpcmVfdGltZT0xNjA5MDI2MjYwJmluaXRpYWxfbGF5b3V0X2NsYXNzX2xpc3Q9";
+    private static String API_Key = "";
+    private static String SESSION_ID = "";
+    private static String TOKEN = "";
 
     private static final String LOG_TAG = VideoChatActivity.class.getSimpleName();
     private static final int RC_VIDEO_APP_PERM = 124;
@@ -144,7 +144,7 @@ public class VideoChatActivity extends AppCompatActivity
         if (EasyPermissions.hasPermissions(this, perms)) {
 
             mPublisherViewController = findViewById(R.id.publisher_container);
-            mPublisherViewController = findViewById(R.id.subscriber_container);
+            mSubscriberViewController = findViewById(R.id.subscriber_container);
 
             //1.initialize and connect to the Session
             mSession = new Session.Builder(this, API_Key, SESSION_ID).build();
