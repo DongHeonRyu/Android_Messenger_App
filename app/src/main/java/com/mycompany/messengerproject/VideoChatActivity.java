@@ -34,9 +34,9 @@ public class VideoChatActivity extends AppCompatActivity
         PublisherKit.PublisherListener {
 
 
-    private static String API_Key = "";
-    private static String SESSION_ID = "";
-    private static String TOKEN = "";
+    private static String API_Key = "46992154";
+    private static String SESSION_ID = "1_MX40Njk5MjE1NH5-MTYwNzIzNjc4NTk5N35XV040clpTZndXTDFJbmw1dG5IU1AvWXp-fg";
+    private static String TOKEN = "T1==cGFydG5lcl9pZD00Njk5MjE1NCZzaWc9M2UzYTI0MWZlMmRlOWIwYzViZDY2ZmEzMTI2NWJkZGM4NWZjZTJmMTpzZXNzaW9uX2lkPTFfTVg0ME5qazVNakUxTkg1LU1UWXdOekl6TmpjNE5UazVOMzVYVjA0MGNscFRabmRYVERGSmJtdzFkRzVJVTFBdldYcC1mZyZjcmVhdGVfdGltZT0xNjA3MjM2OTMwJm5vbmNlPTAuMjg0MzgyMzgxNjgzNzU1NiZyb2xlPXB1Ymxpc2hlciZleHBpcmVfdGltZT0xNjA5ODI4OTI5JmluaXRpYWxfbGF5b3V0X2NsYXNzX2xpc3Q9";
 
     private static final String LOG_TAG = VideoChatActivity.class.getSimpleName();
     private static final int RC_VIDEO_APP_PERM = 124;
