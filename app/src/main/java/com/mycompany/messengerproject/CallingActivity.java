@@ -240,7 +240,7 @@ public class CallingActivity extends AppCompatActivity {
                     public void onDataChange(DataSnapshot dataSnapshot) {
 
                         if (dataSnapshot.exists() && dataSnapshot.hasChild("ringing")) {
-                            ringingID = dataSnapshot.child("calling").getValue().toString();
+                            ringingID = dataSnapshot.child("ringing").getValue().toString();
 
                             usersRef.child(ringingID)
                                     .child("Calling")
